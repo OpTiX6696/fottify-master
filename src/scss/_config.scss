@@ -1,0 +1,60 @@
+
+
+$purple: #8b4d79;
+$orange: #eba342;
+
+@mixin highlight {
+    border: 2px solid none;
+    text-transform: uppercase;
+    color: white;
+    background-color: lighten($purple, 5%);
+    border-radius: 100px;
+    font-weight: bold;
+}
+
+
+
+@mixin pad {
+    padding: 0px 100px;
+}
+
+@mixin text-font {
+    font-size: 20px;
+}
+
+@mixin transition-ease {
+    transition: all 0.5s ease;
+}
+
+@mixin header {
+    // color: white;
+    width: max-content;
+    font-size: 30px;
+    margin-bottom: 20px;
+
+    .header__underline {
+        border: 2px solid white;
+        width: 80px;
+        margin: 0 auto;
+    }
+}
+
+
+// @media (max-width: 1000px) {
+//     @mixin text-font {
+//         font-size: 80%;
+//     }
+    
+//     @mixin header {
+//         // color: white;
+//         // width: max-content;
+//         font-size: 25px;
+//         // margin-bottom: 20px;
+    
+//         // .header__underline {
+//         //     border: 2px solid white;
+//         //     width: 80%;
+//         //     margin: 0 auto;
+//         // }
+//     }
+// }

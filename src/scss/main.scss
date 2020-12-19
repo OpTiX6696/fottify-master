@@ -1,0 +1,355 @@
+@import 'config';
+@import 'facade';
+@import 'about';
+@import 'works';
+@import 'testimonies';
+@import 'contact';
+@import 'tools';
+
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
+}
+body {
+    background: lighten($purple, 55%);
+}
+
+// hamburger menu
+
+.ham-menu {
+    position: relative;
+    display: none;
+    height: 20px;
+    width: 30px;
+    // margin: 10px 0;
+    // transition: all 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+    &:hover {
+        cursor: pointer;
+    }
+
+}
+
+.dash {
+    position: absolute;
+    width: 30px;
+    left: 0;
+    height: 3px;
+    background-color: black;
+    border-radius: 20px;
+    // position: absolute;
+    transition: all 0.4s ease;
+    transform-origin: left;
+}
+
+.dash:nth-child(1) {
+    top: 0px;
+}
+
+.dash:nth-child(2) {
+    top: 8px;
+}
+
+.dash:nth-child(3) {
+    bottom: 0px;
+}
+
+.mobile-nav {
+    display: none;
+}
+
+
+li {
+    list-style: none;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: relative;
+    z-index: 3;
+    background-color: lighten($purple, 55%);
+
+    .main__logo {
+        // border: 2px solid green;
+        display: flex;
+        // grid-template-columns: repeat(2, 1fr);
+        // gap: 10px;
+        align-items: center;
+        // align-items: center;
+        // margin-left: 50px;
+
+        h1 {
+            font-size: 200%;
+            text-align: center;
+            margin-left: 10px;
+            color: lighten($purple, 10%);
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        img {
+            width: 65px;
+            height: 50px;
+        }
+    }
+    nav ul {
+        // border: 2px solid red;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        align-items: center;
+        justify-content: center;
+
+        li {
+            // border: 2px solid rgb(102, 139, 102);
+            
+
+            a {
+                color: lighten($purple, 10%);
+                padding: 5px 10px;
+                margin: 0 5px;
+                font-size: 20px;
+                border-radius: 3px;
+                @include transition-ease;
+
+                &:hover {
+                    color: darken($purple, 30);
+                    // box-shadow: 0.1px 0.1px 7px 0.1px lighten($purple, 5%);
+                }
+            }
+
+            
+
+            &:nth-last-of-type(1) {
+                padding: 0;
+                border: none;
+            }
+
+            a.highlight {
+                padding: 10px 20px;
+                // border-radius: 5px;
+                font-size: 20px;
+                @include highlight;
+                @include transition-ease;
+
+                &:hover {
+                    box-shadow: 0.1px 0.1px 7px 0.1px lighten($purple, 5%);
+                    color: lighten($purple, 10%);
+                    background-color: lighten($purple, 55%);
+                    @include transition-ease;
+                }
+            }
+            
+        }
+    }
+}
+
+
+#works_testimony {
+
+    position: relative;
+    width: 100%;
+    height: max-content;
+    overflow: hidden;
+    // border: 2px solid green;
+    // padding-bottom: 100px;
+
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: -35%;
+        width: 100%;
+        height: 100%;
+        background: url(../imgs/testimony.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: bottom;
+        z-index: -1;
+    }
+
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+}
+
+@media (max-width: 1000px) {
+    header {
+
+        .main__logo {
+        }
+
+        nav ul {
+            gap: 10px;
+
+            li {
+
+                a {
+                    font-size: 13px;
+                }
+
+                a.highlight {
+                    font-size: 15px;
+                    padding: 5px 10px;
+                }
+            }
+        }
+    }   
+
+    body main #works_testimony {
+
+        &::after {
+            bottom: -33%;
+
+            background-size: cover;
+        }
+    }
+}
+
+
+@media (max-width: 749px) {
+    header {
+
+        .main__logo {
+
+            h1 {
+                font-size: 100%;
+            }
+
+            img {
+                width: 55px;
+                height: 40px;               
+            }
+        }
+
+        nav ul {
+            gap: 0px;
+
+            li {
+
+                a {
+                    font-size: 13px;
+                }
+
+                a.highlight {
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+    
+    body main #works_testimony {
+
+        &::after {
+            bottom: -40%;
+
+            background-size: cover;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .ham-menu {
+        display: block;
+        transition: all 1s ease;
+    }
+
+    .nav-close {
+        transform-origin: center;
+        transform: rotate(360deg);
+        animation: close-nav 1s cubic-bezier(0.19, 1, 0.22, 1) 0s 1 forwards;
+    }
+
+    .nav-open {
+        transform: rotate(0deg);
+        transform-origin: center;
+        animation: open-nav 1s cubic-bezier(0.19, 1, 0.22, 1) 0s 1 forwards;
+    }
+
+    header {
+
+        nav {
+            display: none;
+        }
+        
+    }
+
+    .mobile-nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        position: relative;
+        top: -100px;
+        margin-bottom: -100px;
+        z-index: 2;
+        width: 100%;
+        padding: 25px 0;
+        border-top: 1px solid $purple;
+        background-color: white;
+        transition: all 0.5s ease-out;
+    
+        a {
+            margin: 5px 0;
+            text-decoration: none;
+            color: black;
+            text-align: center;
+        }
+    
+        a:last-child {
+            background-color: $purple;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 50px;
+            font-size: 15px;
+            font-weight: 600;
+        }
+    }
+
+    .about-tools_group {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        top: -50px;
+        // margin-bottom: -50px;
+        margin: 0 3vw;
+        border-radius: 30px;
+        box-shadow: 0px 0px 10px 0px rgba($color: black, $alpha: 0.4);
+        background-color: #fff;
+        padding: 0 10vw;
+    }
+
+    footer {
+        margin: -50px 0;
+    }
+
+    @keyframes open-nav {
+        0% {
+            transform: rotate(0deg);
+        }
+
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+
+    @keyframes close-nav {
+        0% {
+            transform: rotate(360deg);
+        }
+
+        100% {
+            transform: rotate(0deg);
+        }
+    }
+}

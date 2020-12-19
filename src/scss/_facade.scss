@@ -1,0 +1,141 @@
+
+
+.facade {
+    // border: 2px solid red;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    padding: 0px 40px 0px;
+    // @include pad;
+
+
+    &__img {
+        // border: 2px solid blue;
+        // margin: 10px 0 0 0;
+        // background-position: center;
+        // background-size: cover;
+
+        img {
+            width: 450px;
+            height: 450px;
+        }
+    }
+
+    &__text {
+        margin-top: 70px;
+        display: flex;
+        flex-direction: column;
+
+        h2 {
+            font-weight: 400;
+            margin-bottom: 20px;
+            font-size: 50px;
+        }
+        p {
+            width: 80%;
+            margin-bottom: 50px;
+            @include text-font;
+            line-height: 35px;
+        }
+        a {
+            margin: 10px 0;
+            padding: 10px 25px;
+            @include text-font;
+            @include highlight;
+            text-align: center;
+            width: max-content;
+        }
+    }
+}
+
+
+
+@media (max-width: 1000px) {
+        
+    .facade {
+        padding: 0px 4vw 0px;
+
+        &__img {
+
+            img {
+                width: 300px;
+                height: 300px;
+            }
+        }
+
+        &__text {
+            margin-top: 50px;
+            
+
+            h2 {
+                font-size: 40px;
+            }
+
+            p {
+                width: 80%;
+                font-size: 13px;
+            }
+        }
+    }
+}
+
+@media (max-width: 749px) {
+    .facade {
+        padding: 50px 20px 0px;
+
+
+        &__img {
+            display: none;
+        }
+
+        &__text {
+            margin: 50px 8vw 0;
+
+            p {
+                font-size: 15px;
+            }
+
+            a {
+                font-size: 13px;
+            }
+        }
+    }
+
+}
+
+@media (max-width: 500px) {
+
+    .facade {
+        height: 100%;
+        background-color: $purple;
+        color: white;
+        padding: 0 8vw 70px;
+
+        &__img {
+            display: none;
+        }
+
+        &__text {
+
+            p {
+                margin: 0 0 20px;
+                width: 100%;
+                line-height: 1.8;
+            }
+
+            h2 {
+                font-size: 25px;
+                font-weight: bold;
+                margin-bottom: 5px;
+            }
+
+            a {
+                background-color: white;
+                color: black;
+                padding: 10px 20px;
+                font-size: 12px;
+            }
+        }
+    }
+}
