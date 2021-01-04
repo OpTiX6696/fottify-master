@@ -1,53 +1,5 @@
 
 
-.facade {
-    // border: 2px solid red;
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    width: 100%;
-    padding: 0px 40px 0px;
-    // @include pad;
-
-
-    &__img {
-        // border: 2px solid blue;
-        // margin: 10px 0 0 0;
-        // background-position: center;
-        // background-size: cover;
-
-        img {
-            width: 450px;
-            height: 450px;
-        }
-    }
-
-    &__text {
-        margin-top: 70px;
-        display: flex;
-        flex-direction: column;
-
-        h2 {
-            font-weight: 400;
-            margin-bottom: 20px;
-            font-size: 50px;
-        }
-        p {
-            width: 80%;
-            margin-bottom: 50px;
-            @include text-font;
-            line-height: 35px;
-        }
-        a {
-            margin: 10px 0;
-            padding: 10px 25px;
-            @include text-font;
-            @include highlight;
-            text-align: center;
-            width: max-content;
-        }
-    }
-}
 
 
 

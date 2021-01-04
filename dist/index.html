@@ -3,39 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Goudy+Bookletter+1911&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Tera&family=Metal+Mania&family=Montserrat:wght@400;500;600;700&family=Open+Sans:ital,wght@0,300;0,600;0,700;1,300&family=Tenali+Ramakrishna&family=Ubuntu:wght@100;200;300;400;500;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/home.css">
     <script defer src="./main.js"></script>
     <title>Fottify - Digital Solutions</title>
 </head>
 <body>
   <header>
-    <div class="main__logo">
-      <img src="imgs/fottifyLogo.png" alt="Fottify Logo">
-      <h1>Fottify</h1>
+    <div id="header__content">
+      <div id="main__logo">
+        <img src="imgs/fottifyLogo.png" alt="Fottify Logo">
+        <div class="texts">
+          <h1>Fottify</h1>
+          <h5>Get Digital Get Fortified</h5>
+        </div>
+      </div>
+  
+      <div class="ham-menu">
+        <div class="dash"></div>
+        <div class="dash"></div>
+        <div class="dash"></div>
+      </div>
+      <nav id="nav">
+        <ul class="menu-nav">
+          <li class="menu-nav__item active">
+            <a href="index.html" class="menu-nav__link">Home</a>
+          </li>
+          <li class="menu-nav__item">
+            <a href="#works" class="menu-nav__link">Our works</a>
+          </li>
+          <li class="menu-nav__item">
+            <a href="about.html" class="menu-nav__link">About us</a>
+          </li>
+          
+          <li class="menu-nav__item">
+            <a href="#contact" class="menu-nav__link">Contact Us</a>
+          </li>
+          <li class="menu-nav__item">
+            <a href="index.html" class="menu-nav__link highlight">Hire Us</a>
+          </li>
+        </ul>
+      </nav>
     </div>
-
-    <div class="ham-menu">
-      <div class="dash"></div>
-      <div class="dash"></div>
-      <div class="dash"></div>
+    
+    <div id="header__services">
+      <nav class='services'>
+        <li><a href="#">Graphics & Design</a>
+        </li>
+        <li><a href="#">Video & Animation</a>
+        </li>
+        <li><a href="#">Programming & Tech</a>
+        </li>
+      </nav>
     </div>
-
-    <nav class="nav">
-      <ul class="menu-nav">
-        <li class="menu-nav__item">
-          <a href="#about" class="menu-nav__link">About</a>
-        </li>
-        <li class="menu-nav__item">
-          <a href="#works" class="menu-nav__link">Works</a>
-        </li>
-        <li class="menu-nav__item">
-          <a href="#contact" class="menu-nav__link">Contact</a>
-        </li>
-        <li class="menu-nav__item">
-          <a href="index.html" class="menu-nav__link highlight">Hire Us</a>
-        </li>
-      </ul>
-    </nav>
+    
   </header>
 
   <div class="mobile-nav">
@@ -43,26 +67,91 @@
       <a href="#contact">Contact</a>
       <a href="#">HIRE US</a>
   </div>
+  <div id="intro__pic">
+    <div id="overlay">
+      
+    </div>
+    <!-- <img src="imgs\adobephotoshop.svg" alt=""> -->
+  </div>
+
 
   <main>
-    <section class="facade">
-      <div class="facade__text">
-        <h2>WE PROVIDE <br> DIGITAL SOLUTIONS</h2>
+
+    <section id="facade">
+      <div id="facade__text">
+        <h2>WE PROVIDE<br>DIGITAL SOLUTIONS</h2>
         <p>
-          Fottify is a tech brand  that offers premium service 
-          in the creation of web services . It’s a leader in its niche, 
-          with a legacy that dates back years and quality products that 
-          people swear by. 
+          Fottify is a solution-driven technology-based service provider backed by a team of creative and highly experienced Web Developers and Graphics Designers. Driven by the desire to create and implement adaptive solutions to customers' needs, we always err on the side of our customers, whilst also presenting recommendations and helping our customers grow. 
         </p>
         <a href="#">LEARN MORE</a>
       </div>
-      <div class="facade__img">
-        <img src="./imgs/pressing laptop.svg" alt="A programmer at work.">
+      <div id="facade__img">
+        <!-- <img src="./imgs/pressing laptop.svg" alt="A programmer at work."> -->
+      </div>
+    </section>
+
+
+    <section id="advert">
+      <div id="ads">
+        <div id="ads__text">
+          <h3>Have Your Business Grow Internet Presence</h3>
+          <p>
+            In the hands of our EXPERTS
+          </p>
+          <ul>
+           
+            <li> <p class="check">&checkmark;</p>  Digital Marketing Solutions for Tomorrow</li>
+            <li> <p class="check">&checkmark;</p>  Our Talented & Experienced Marketing Agency</li>
+            <li> <p class="check">&checkmark;</p>  Create your own skin to match your brand</li>
+          </ul>
+        </div>
+        <div id="ads__img">
+          <!-- An image goes in here -->
+        </div>
+      </div>
+
+      <div id="features">
+        <div class="feature">
+          <div class="feature__img first">
+            <!-- A small image in here -->
+          </div>
+          <div class="feature__text">
+            <h3>Feature Header</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum autem dolor delectus assumenda fuga architecto!</p>
+          </div>
+        </div>
+        <div class="feature">
+          <div class="feature__img second">
+            <!-- A small image in here -->
+          </div>
+          <div class="feature__text">
+            <h3>Feature Header</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum autem dolor delectus assumenda fuga architecto!</p>
+          </div>
+        </div>
+        <div class="feature">
+          <div class="feature__img third">
+            <!-- A small image in here -->
+          </div>
+          <div class="feature__text">
+            <h3>Feature Header</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum autem dolor delectus assumenda fuga architecto!</p>
+          </div>
+        </div>
+        <div class="feature">
+          <div class="feature__img fourth">
+            <!-- A small image in here -->
+          </div>
+          <div class="feature__text">
+            <h3>Feature Header</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum autem dolor delectus assumenda fuga architecto!</p>
+          </div>
+        </div>
       </div>
     </section>
 
     <div class="about-tools_group">
-      <section id="about" class="about">
+      <!-- <section id="about" class="about">
         <div class="slant_content">
           <div class="slant"></div>
           <div class="about_content">
@@ -92,9 +181,9 @@
             </p>
           </div>
         </div>
-      </section>
+      </section> -->
 
-      <div id="works_testimony" >
+      <!-- <div id="works_testimony" >
         <section id="works" class="works">
           <div class="header__content">
             <h3 class="header__text">
@@ -277,9 +366,9 @@
 
           </div>
         </section>
-      </div>
+      </div> -->
 
-      <section id="contact" class="contact">
+      <!-- <section id="contact" class="contact">
         <div class="header__content">
           <h3 class="header__text">
             CONTACT US
@@ -287,7 +376,6 @@
           <hr class="header__underline">
         </div>
 
-        <!-- <div class="contact__form"> -->
           <form action="#" method="post" class="contact__form">
             <div class="user__info">
               <input type="text" name="user_name" id="name" placeholder="name*" class="user-info" required>
@@ -297,9 +385,7 @@
             <input type="text" name="user_message" id="message" placeholder="message*">
             <button type="submit">Submit</button>
           </form>
-    
-        <!-- </div> -->
-        
+            
         <div class="contact__info">
           <div class="contact__item">
             <h5>Speak with us : </h5>
@@ -335,7 +421,7 @@
             </ul>
           </div>
         </div>
-      </section>
+      </section> -->
 
       <section id="tools" class="tools">
         <div class="header__content">
@@ -381,7 +467,38 @@
 
 
   <footer>
-    <p>&copy; 2020 Fottify</p>
+    <div id='footer'>
+      <div id="footer__nav">
+        <ul id="footer-nav">
+          <li><a href="#" class='footer__nav-item'>&gt; Home</a></li>
+          <li><a href="#" class='footer__nav-item'>&gt; Our Works</a></li>
+          <li><a href="#" class='footer__nav-item'>&gt; About Us </a></li>
+          <li><a href="#" class='footer__nav-item'>&gt; Contact Us</a></li>
+        </ul>
+      </div>
+  
+      <div id="newsletter">
+        <h3>
+          Subscribe to our Newsletter
+        </h3>
+        <form action="post">
+          <input type="email" name="subscriber" id="newsletter_sub" placeholder="Please, enter your email address">
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+  
+      <div id="social__media">
+        <h3>Stay Connected With Us</h3>
+        <ul id="social__media__list">
+          <li class="social__media__item"><a href="" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook fa-2x"></i></a></li>
+          <li class="social__media__item"><a href="" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter fa-2x"></i></a></li>
+          <li class="social__media__item"><a href="" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin fa-2x"></i></a></li>
+          <li class="social__media__item"><a href="" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram fa-2x"></i></a></li>
+        </ul>
+      </div>
+    </div>
+
+    <p>&copy; 2020 Fottify Company Limited</p>
   </footer>      
 
   <script src="https://kit.fontawesome.com/0846ffa042.js" crossorigin="anonymous"></script>

@@ -1,7 +1,9 @@
 
-
 $purple: #8b4d79;
 $orange: #eba342;
+@mixin pad {
+    padding: 0px 100px;
+}
 
 @mixin highlight {
     border: 2px solid none;
@@ -10,12 +12,6 @@ $orange: #eba342;
     background-color: lighten($purple, 5%);
     border-radius: 100px;
     font-weight: bold;
-}
-
-
-
-@mixin pad {
-    padding: 0px 100px;
 }
 
 @mixin text-font {
@@ -33,28 +29,16 @@ $orange: #eba342;
     margin-bottom: 20px;
 
     .header__underline {
-        border: 2px solid white;
+        border: 1px solid grey;
         width: 80px;
         margin: 0 auto;
     }
 }
 
 
-// @media (max-width: 1000px) {
-//     @mixin text-font {
-//         font-size: 80%;
-//     }
-    
-//     @mixin header {
-//         // color: white;
-//         // width: max-content;
-//         font-size: 25px;
-//         // margin-bottom: 20px;
-    
-//         // .header__underline {
-//         //     border: 2px solid white;
-//         //     width: 80%;
-//         //     margin: 0 auto;
-//         // }
-//     }
-// }
+
+
+
+
+
+
