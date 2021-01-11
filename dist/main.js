@@ -44,7 +44,6 @@ category__item.forEach(function(e) {
 function showCatList(e) {
     let service_list = e.target.nextElementSibling;
     let category = e.target.parentElement;
-    console.log('This is ' + service_list);
     service_list.classList.add('show')
     category.addEventListener('mouseleave', (e) => {
         hideCatList(e, category)}, {once: true}

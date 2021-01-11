@@ -18,50 +18,81 @@
     
 
     <header>
-        <div id="header__content">
-          <div id="main__logo">
-            <img src="imgs/fottifyLogo.png" alt="Fottify Logo">
-            <div class="texts">
-              <h1>Fottify</h1>
-              <h5>Get Digital Get Fortified</h5>
-            </div>
+      <div id="header__content">
+        <div id="main__logo">
+          <img src="imgs/fottifyLogo.png" alt="Fottify Logo">
+          <div class="texts">
+            <h1>Fottify</h1>
+            <h5>Get Digital Get Fortified</h5>
           </div>
+        </div>
+    
+        <div class="ham-menu">
+          <div class="dash"></div>
+          <div class="dash"></div>
+          <div class="dash"></div>
+        </div>
+        <nav id="nav">
+          <ul class="menu-nav">
+            <li class="menu-nav__item active">
+              <a href="index.html" class="menu-nav__link">Home</a>
+            </li>
+            <li class="menu-nav__item">
+              <a href="#works" class="menu-nav__link">Our works</a>
+            </li>
+            <li class="menu-nav__item">
+              <a href="about.html" class="menu-nav__link">About us</a>
+            </li>
+            
+            <li class="menu-nav__item">
+              <a href="#contact" class="menu-nav__link">Contact Us</a>
+            </li>
+            <li class="menu-nav__item">
+              <a href="index.html" class="menu-nav__link highlight">Hire Us</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
       
-          <div class="ham-menu">
-            <div class="dash"></div>
-            <div class="dash"></div>
-            <div class="dash"></div>
+      <div id="header__services">
+        <div class="category">
+          <li class="category__item">Graphics & Design</li>
+          <div class="service_dropdown" id="g_and_a" >
+            <a>First Item</a>
+            <a>Second Item</a>
+            <a>Second Item</a>
+            <a>Second Item</a>
+            <a>Second Item</a>
+            <a>Second Item</a>
           </div>
-          <nav id="nav">
-            <ul class="menu-nav">
-              <li class="menu-nav__item active">
-                <a href="index.html" class="menu-nav__link">Home</a>
-              </li>
-              <li class="menu-nav__item">
-                <a href="#works" class="menu-nav__link">Our works</a>
-              </li>
-              <li class="menu-nav__item">
-                <a href="about.html" class="menu-nav__link">About us</a>
-              </li>
-              
-              <li class="menu-nav__item">
-                <a href="#contact" class="menu-nav__link">Contact Us</a>
-              </li>
-              <li class="menu-nav__item">
-                <a href="index.html" class="menu-nav__link highlight">Hire Us</a>
-              </li>
-            </ul>
-          </nav>
         </div>
         
-        <div id="header__services">
-          <nav class='services'>
-            <li><a href="#">Graphics & Design</a></li>
-            <li><a href="#">Video & Animation</a></li>
-            <li><a href="#">Programming & Tech</a></li>
-          </nav>
+        <div class="category">
+          <li class="category__item">Video & Animation</li>
+          <div class="service_dropdown" id="vid_and_anim">
+            <a>First Item</a>
+            <a>Second Item</a>
+            <a>Second Item</a>
+            <a>Second Item</a>
+            <a>Second Item</a>
+            <a>Second Item</a>
+          </div>
         </div>
-        
+
+        <div class="category">
+          <li class="category__item">Programming & Tech</li>
+          <div class="service_dropdown" id="prog_and_tech">
+            <a>First Item</a>
+            <a>Second Item</a>
+            <a>Second Item</a>
+            <a>Second Item</a>
+            <a>Second Item</a>
+            <a>Second Item</a>
+          </div>
+        </div>
+
+      </div>
+      
     </header>
 
     <div class="mobile-nav">
@@ -69,9 +100,6 @@
         <a href="#contact">Contact</a>
         <a href="#">HIRE US</a>
     </div>
-    
-
-
     <main>
         <div id="about__animation">
             <img src="\imgs\animation-about.jpg" alt="">
@@ -106,14 +134,6 @@
 
     <footer>
         <div id='footer'>
-          <div id="footer__nav">
-            <ul id="footer-nav">
-              <li><a href="#" class='footer__nav-item'>&gt; Home</a></li>
-              <li><a href="#" class='footer__nav-item'>&gt; Our Works</a></li>
-              <li><a href="#" class='footer__nav-item'>&gt; About Us </a></li>
-              <li><a href="#" class='footer__nav-item'>&gt; Contact Us</a></li>
-            </ul>
-          </div>
       
           <div id="newsletter">
             <h3>
@@ -140,6 +160,6 @@
     </footer>      
     
     <script src="https://kit.fontawesome.com/0846ffa042.js" crossorigin="anonymous"></script>
-    <script src="js/main.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>
