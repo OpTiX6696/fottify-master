@@ -3,7 +3,7 @@
 
 @font-face {
     font-family: 'BluuNext';
-    src: url('/BluuNext-Bold.otf');
+    src: url('../BluuNext-Bold.otf');
 }
 
 // **************************************
@@ -200,13 +200,10 @@ div.feature {
 
 .tools {
     // border: 2px solid red;
-    // padding: 10px 200px 0 ;
     @include text-font;
     background-image: url('/imgs/fottwhirl.svg');
     background-repeat: no-repeat;
     background-size: contain;
-    width: 100%;
-    height: max-content;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -219,6 +216,10 @@ div.feature {
         position: relative;
         right: 10%;
         top: 80px;
+
+        .header__underline {
+            width: 70%;
+        }
     }
     
     &__list {
@@ -226,15 +227,13 @@ div.feature {
         display: grid;
         justify-self: center;
         align-self: center;
-        width: 100%;
         margin-top: 50px;
-        grid-template-rows: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 150px);
         grid-template-columns: repeat(3, 1fr);
 
         .tool {
             // border: 2px solid rgb(71, 8, 216);
-            transform: scale(0.65);
-            margin: auto;
+            transform: scale(0.6);
 
             img {
                 width: 100%;
@@ -327,8 +326,11 @@ div.feature {
 
         .header__content {
             // margin-top: 150px;
-            right: 7%;
-            top: 20px;
+            right: 5%;
+            top: -2px;
+            font-size: 100%;
+            // width: 70%;
+
         }
 
         &__list { 
@@ -430,10 +432,6 @@ div.feature {
             right: 1%;
             top: 7px;
             font-size: 110%;
-
-            .header__underline {
-                width: 50px;
-            }
         }
 
         &__list { 

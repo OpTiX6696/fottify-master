@@ -82,19 +82,18 @@ header {
     width: 100%;
     z-index: 20;
     // background-color: #8b4d797c;
-    background-color: lighten(#8b4d79b4, 50%);
-
+    background-color: lighten(#8b4d79d5, 50%);
 }
 
 #header__content {
-    // border: 2px solid green;
+    // border: 2px solid rgb(48, 14, 202);
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    height: 80px;
-    // width: 100%;
+    height: 90px;
+    // width: 20%;
     padding-bottom: 5px;
     background-color: inherit;
     border-bottom: 1px solid grey;
@@ -102,47 +101,35 @@ header {
 }
 
 #main__logo {
-    // border: 2px solid green;
+    // border: 2px solid red;
+    width: 17%;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: flex-end;
-    margin-left: 6%;
+    // flex-wrap: wrap;
+    justify-content: start;
+    align-items: center;
+    margin-left: 5rem;
+    z-index: 2;
     height: 100%;
 
-    div.texts {
-        // border: 1px solid blue;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 3px;
-        color: $purple;
-        margin-left: 5px;
-
-        h1 {
-            // border: 1px solid red;
-            width: 100%;
-            font-family: 'BluuNext', serif;
-            text-align: center;
-            font-weight: 400;
-            font-size: 130%;
-            letter-spacing: 11px;
-            padding-left: 9px;
-               
-        }
-        h5 {
-            font-weight: lighter;
-            font-family: 'Open Sans', sans-serif;
-            font-size: 80%;
-        }
+    img {
+        margin-right: 5px;
+        width: 35%;
+        // height: ;
     }
 
-    img {
-        // margin-right: 5px;
-        width: 90px;
-        height: 70px;
+    div.texts {
+        // border: 2px solid red;
+
+        h1 {
+            // border: 2px solid red;
+            text-transform: uppercase;
+            letter-spacing: 0.775rem;
+            font-size: 16px;
+        }
+        h5 {
+            font-weight: 400;
+            // word-spacing: 3px;
+        }
     }
 }
 
@@ -181,15 +168,14 @@ nav#nav ul {
 div#header__services {
     // border: 2px solid green;
     display: flex;
-    background-color: transparent;
+    background-color: inherit;
     justify-content: space-around;
     align-items: center;
-    gap: 20%;
-    // border-bottom: 1px solid grey;
-    font-size: 90%;
+    gap: 15%;
+    font-size: 16px;
     position: relative;
-    padding: 0 20px;
-    max-width: 1000px;
+    padding: 0 10%;
+    // max-width: 1400px;
     margin: 0 auto;
 
     li {
@@ -203,23 +189,25 @@ div.service_dropdown {
     // border: 2px solid green;
     position: absolute;
     z-index: -1;
-    top: -1000%;
-    // display: none;
+    top: 100%;
     width: 20vw;
     min-width: 100px;
     max-width: 200px;
-    background-color: lighten(#8b4d79b4, 50%);
-    font-size: 110%;
+    background-color: lighten(#8b4d79d5, 50%);
+    font-size: 16px;
     color: darken($purple, 30%);
     overflow: hidden;
     margin: 0 auto;
-    transition: all 0.75s ease-out;
+    height: 0;
+    transition: all 0.5s ease-out;
 
     &.show {
-        top: 100%;
-        // display: unset;
-    }
+        transition: all 0.5s ease-out;
+        height: 198px;
+        // transition: all 0.75s ease-out;
 
+    }
+    
     a {
         // border: 2px solid red;
         display: flex;
@@ -236,7 +224,6 @@ div.service_dropdown {
         }
     }   
 }
-
 
 
 // *************************************
@@ -355,9 +342,13 @@ div#social__media {
         padding-top: 3px;
     }
 
+    div#header__services {
+        gap: 12%;
+    }
+
     #main__logo {
         transform: scale(0.75);
-        margin-left: 1.25rem;
+        margin-left: 3rem;
 
         img {
             height: 60px;
@@ -367,7 +358,7 @@ div#social__media {
         div.texts {
 
             h1 {
-                font-size: 110%;
+                font-size: 18px;
             }
         }
     }
@@ -396,7 +387,8 @@ div#social__media {
         height: 60px;
     }
     #main__logo {
-        transform: scale(0.7);
+        border: 2px solid red;
+        // transform: scale(0.7);
         margin-left: 1rem;
 
         img {
@@ -405,6 +397,7 @@ div#social__media {
         }
 
         div.texts {
+            // transform: scale(0.8);
 
             h1 {
                 font-size: 110%;
@@ -412,15 +405,16 @@ div#social__media {
         }
     }
     nav#nav ul {
-        font-size: 05%;
-        margin-right: 1rem;
+        font-size: 75%;
+        margin-right: 0.5rem;
 
         li {
             padding: 4px 7px;
         }
     }
     div#header__services {
-        gap: 10%;
+        gap: 8%;
+        font-size: 14px;
     }
 
     div#newsletter {
