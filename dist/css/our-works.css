@@ -18,14 +18,12 @@ body {
   height: 20px;
   background-color: rgba(0, 0, 0, 0.9);
   z-index: 10;
-  transition: height .3s,width .3s,bottom .3s,left .3s ease;
+  transition: height 0.3s, width 0.3s, bottom 0.3s, left 0.3s ease;
 }
-
 .image-video-preview img {
   height: 90%;
   width: auto;
 }
-
 .image-video-preview iframe {
   display: none;
 }
@@ -50,7 +48,6 @@ body {
   margin-left: 50px;
   width: 40%;
 }
-
 @media only screen and (max-width: 800px) {
   .intro-text {
     width: 90%;
@@ -74,21 +71,17 @@ body {
 .graphics-design, .video-animation, .programming-tech {
   margin-bottom: 30px;
 }
-
 .graphics-design > div, .video-animation > div, .programming-tech > div {
   margin-left: 100px;
 }
-
 @media only screen and (max-width: 800px) {
   .graphics-design > div, .video-animation > div, .programming-tech > div {
     margin-left: 30px;
   }
 }
-
 .graphics-design > section, .video-animation > section, .programming-tech > section {
   margin-left: 50px;
 }
-
 @media only screen and (max-width: 800px) {
   .graphics-design > section, .video-animation > section, .programming-tech > section {
     margin-left: 30px;
@@ -109,17 +102,14 @@ body {
   display: flex;
   margin-left: 50px;
 }
-
-.works > div:nth-child(2n + 1) {
+.works > div:nth-child(2n+1) {
   margin-top: 150px;
 }
-
 @media only screen and (max-width: 1000px) {
-  .works > div:nth-child(2n + 1) {
+  .works > div:nth-child(2n+1) {
     margin-top: 70px;
   }
 }
-
 @media only screen and (max-width: 800px) {
   .works {
     margin-left: 0px;
@@ -161,7 +151,6 @@ body {
   border-radius: 5%;
   margin: 50px 0;
 }
-
 @media only screen and (max-width: 1000px) {
   .work-img {
     margin: 20px 0;
@@ -171,7 +160,6 @@ body {
 .graphics-design .work:hover::after {
   opacity: 1;
 }
-
 .graphics-design .work::after {
   opacity: 0;
   display: flex;
@@ -184,7 +172,7 @@ body {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.8);
   color: white;
-  content: 'click to view';
+  content: "click to view";
   border-radius: 10px;
   cursor: pointer;
 }
@@ -194,19 +182,16 @@ body {
   align-items: center;
   justify-content: center;
 }
-
 .video-animation .work-img i {
   position: absolute;
   opacity: 0.9;
   color: #fff;
   font-size: 6vw;
-  transition: all .2s ease;
+  transition: all 0.2s ease;
 }
-
 .video-animation .work-img:hover {
   cursor: pointer;
 }
-
 .video-animation .work-img:hover i {
   opacity: 0.9;
   transform: scale(1.5);
@@ -215,11 +200,9 @@ body {
 .programming-tech .work-container {
   margin: 50px 0;
 }
-
 .programming-tech .work-container .work-img {
   margin: 0 0 5px 0;
 }
-
 .programming-tech .work-container a {
   display: flex;
   align-items: flex-start;
@@ -227,17 +210,14 @@ body {
   text-decoration: none;
   font-size: 16px;
 }
-
 .programming-tech .work-container a img {
   width: 15px;
   height: 15px;
   margin-right: 5px;
 }
-
 .programming-tech .work-container a:hover {
   text-decoration: underline;
 }
-
 @media only screen and (max-width: 1000px) {
   .programming-tech .work-container a {
     font-size: 14px;
@@ -247,7 +227,6 @@ body {
     height: 12px;
   }
 }
-
 @media only screen and (max-width: 800px) {
   .programming-tech .work-container a {
     font-size: 12px;
@@ -257,4 +236,3 @@ body {
     height: 10px;
   }
 }
-/*# sourceMappingURL=our-works.css.map */
