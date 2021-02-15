@@ -1,12 +1,10 @@
-* {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-}
+@import 'config';
+@import 'commons';
 
-body {
-    background-color: cornsilk;
-}
+// div.root {
+//     margin: 0 auto;
+// }
+
 
 .image-video-preview {
     display: flex;
@@ -45,6 +43,7 @@ body {
 }
 
 .our-works-content {
+    margin: 0 auto;
     position: relative;
     margin-top: 150px;
 }
@@ -60,6 +59,7 @@ body {
 }
 
 .works-container {
+    margin: 0 auto;
     margin-top: 100px;
 }
 
@@ -106,7 +106,8 @@ body {
 
 .works {
     display: flex;
-    margin-left: 50px;
+    margin: 0 auto;
+    // margin-left: 50px;
 
     & > div:nth-child(2n + 1) {
         margin-top: 150px;

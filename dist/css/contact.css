@@ -353,233 +353,229 @@ div#social__media ul li:hover {
     font-size: 90%;
   }
 }
-.image-video-preview {
-  display: flex;
-  opacity: 0;
-  align-items: center;
-  justify-content: center;
-  position: fixed;
-  width: 20px;
-  height: 20px;
-  background-color: rgba(0, 0, 0, 0.9);
-  z-index: 10;
-  transition: height 0.3s, width 0.3s, bottom 0.3s, left 0.3s ease;
-}
-.image-video-preview img {
-  height: 90%;
-  width: auto;
-}
-.image-video-preview iframe {
-  display: none;
+main {
+  margin-top: 140px;
+  width: 100%;
 }
 
-.close-image-preview {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  color: red;
-  font-size: 50px;
-  font-weight: bold;
-  line-height: 30px;
-  cursor: pointer;
-}
-
-.our-works-content {
-  margin: 0 auto;
+div.contact_facade {
   position: relative;
-  margin-top: 150px;
 }
 
-.intro-text {
-  margin-left: 50px;
-  width: 40%;
-}
-@media only screen and (max-width: 800px) {
-  .intro-text {
-    width: 90%;
-    margin: 20px;
-  }
+img#contact_facade-bg {
+  margin-left: 40px;
+  width: 90%;
+  filter: drop-shadow(1px 3px 4px #cdcdcd);
 }
 
-.works-container {
-  margin: 0 auto;
-  margin-top: 100px;
+h2.contact_facade-text {
+  position: absolute;
+  color: #737373;
+  line-height: 55px;
+  font-size: 250%;
+  top: 25%;
+  left: 17%;
+  text-align: center;
+  z-index: 1;
 }
 
-.section-header {
-  background-color: #fff;
-  color: red;
-  font-weight: bold;
-  padding: 10px 20px;
-  width: max-content;
-  text-transform: uppercase;
+img#contact_facade-img {
+  position: absolute;
+  width: 30%;
+  right: 15%;
+  top: 21%;
 }
 
-.graphics-design, .video-animation, .programming-tech {
+div.contact_concern {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  padding: 0px 100px;
+}
+div.contact_concern-img img {
+  width: 100%;
+}
+div.contact_concern-text {
+  text-align: center;
+  font-size: 170%;
+  color: #737373;
+}
+div.contact_concern-text h2 {
+  font-family: "Ubuntu", sans-serif;
+}
+
+div.contact_form {
+  color: #737373;
+  margin: 50px 0;
+  text-align: center;
+}
+div.contact_form form {
+  font-family: "Ubuntu", sans-serif;
+}
+div.contact_form form input, div.contact_form form textarea {
+  border: transparent;
+  box-shadow: 0px 0px 7px 1px #cdcdcd;
+  border-radius: 6px;
+}
+div.contact_form form h2 {
+  font-family: inherit;
+  font-size: 180%;
+  font-weight: 200;
   margin-bottom: 30px;
 }
-.graphics-design > div, .video-animation > div, .programming-tech > div {
-  margin-left: 100px;
-}
-@media only screen and (max-width: 800px) {
-  .graphics-design > div, .video-animation > div, .programming-tech > div {
-    margin-left: 30px;
-  }
-}
-.graphics-design > section, .video-animation > section, .programming-tech > section {
-  margin-left: 50px;
-}
-@media only screen and (max-width: 800px) {
-  .graphics-design > section, .video-animation > section, .programming-tech > section {
-    margin-left: 30px;
-  }
-}
-
-.sub-section-header {
-  text-transform: uppercase;
-  color: dimgray;
-  font-weight: bold;
-}
-
-.sub-section-header {
-  margin: 20px 0;
-}
-
-.works {
-  display: flex;
-  margin: 0 auto;
-}
-.works > div:nth-child(2n+1) {
-  margin-top: 150px;
-}
-@media only screen and (max-width: 1000px) {
-  .works > div:nth-child(2n+1) {
-    margin-top: 70px;
-  }
-}
-@media only screen and (max-width: 800px) {
-  .works {
-    margin-left: 0px;
-  }
-}
-
-.work-column {
-  display: flex;
-  flex-direction: column;
-  margin: 0 20px;
-}
-
-.work {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: auto;
-  height: auto;
-  max-height: 100%;
-  max-width: 300%;
-  min-height: 100%;
-  min-width: 100%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%);
-  border-radius: 5%;
-}
-
-.work-img {
-  position: relative;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  width: max(100px, min(15vw, 200px));
-  height: max(130px, min(20vw, 300px));
-  overflow: hidden;
-  background-color: #838282;
-  border-radius: 5%;
-  margin: 50px 0;
-}
-@media only screen and (max-width: 1000px) {
-  .work-img {
-    margin: 20px 0;
-  }
-}
-
-.graphics-design .work:hover::after {
-  opacity: 1;
-}
-.graphics-design .work::after {
-  opacity: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  top: 0;
-  left: 0;
+div.contact_form form div.user_info {
   width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 30px;
+}
+div.contact_form form div.user_info input {
+  width: 20%;
+  min-width: 280px;
+  height: 40px;
+  font-size: 16px;
+  letter-spacing: 2px;
+  padding: 7px;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+}
+div.contact_form form div.user_message {
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 20px;
+}
+div.contact_form form div.user_message textarea {
+  min-width: 500px;
+  width: 35%;
+  min-height: 100px;
+  text-align: start;
+  font-size: 16px;
+  letter-spacing: 2px;
+  padding: 7px;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+}
+div.contact_form form button {
+  width: 10%;
+  max-width: 240px;
+  min-width: 120px;
+  font-size: 120%;
+  letter-spacing: 3px;
+  padding: 5px 10px;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  border: none;
+  background-color: #814870;
   color: white;
-  content: "click to view";
-  border-radius: 10px;
-  cursor: pointer;
+  border-radius: 12px;
 }
 
-.video-animation .work-img {
+div.contact_faq {
+  margin-bottom: 80px;
+}
+div.contact_faq h2.faq-header {
+  width: 70%;
+  min-width: 500px;
+  text-align: right;
+  font-size: 200%;
+  font-family: "Ubuntu", sans-serif;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+div.contact_faq-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+div.contact_faq-item {
+  border: none;
+  background-color: white;
+  box-shadow: 0px 0px 7px 1px #cdcdcd;
+  width: 70%;
+  min-width: 500px;
+  margin: 0 auto;
+  font-family: "Ubuntu", sans-serif;
+}
+div.contact_faq-item div.question {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  padding: 0 20px;
 }
-.video-animation .work-img i {
-  position: absolute;
-  opacity: 0.9;
-  color: #fff;
-  font-size: 6vw;
-  transition: all 0.2s ease;
+div.contact_faq-item div.question h4.faq-item-question {
+  font-size: 18px;
+  font-weight: 200;
 }
-.video-animation .work-img:hover {
+div.contact_faq-item div.question h4.reveal-sign {
+  text-align: right;
+  font-size: 30px;
+  font-weight: 200;
   cursor: pointer;
+  padding: 0 20px;
 }
-.video-animation .work-img:hover i {
-  opacity: 0.9;
-  transform: scale(1.5);
+div.contact_faq-item div.answer {
+  display: none;
+  border-top: 1px solid grey;
+  padding: 10px 50% 20px 20px;
+  text-align: left;
+}
+div.contact_faq-item div.reveal {
+  display: block;
 }
 
-.programming-tech .work-container {
-  margin: 50px 0;
-}
-.programming-tech .work-container .work-img {
-  margin: 0 0 5px 0;
-}
-.programming-tech .work-container a {
-  display: flex;
-  align-items: flex-start;
-  color: purple;
-  text-decoration: none;
-  font-size: 16px;
-}
-.programming-tech .work-container a img {
-  width: 15px;
-  height: 15px;
-  margin-right: 5px;
-}
-.programming-tech .work-container a:hover {
-  text-decoration: underline;
-}
-@media only screen and (max-width: 1000px) {
-  .programming-tech .work-container a {
-    font-size: 14px;
+@media (max-width: 1025px) {
+  img#contact_facade-bg {
+    margin-left: 20px;
+    width: 95%;
   }
-  .programming-tech .work-container a img {
-    width: 12px;
-    height: 12px;
+
+  h2.contact_facade-text {
+    line-height: 40px;
+    font-size: 220%;
+    left: 12%;
+  }
+
+  img#contact_facade-img {
+    width: 35%;
+    right: 10%;
+  }
+
+  div.contact_concern {
+    gap: 60px;
+    padding: 0 40px;
+  }
+  div.contact_concern-text {
+    font-size: 150%;
   }
 }
-@media only screen and (max-width: 800px) {
-  .programming-tech .work-container a {
-    font-size: 12px;
+@media (max-width: 780px) {
+  img#contact_facade-bg {
+    margin-left: 15px;
   }
-  .programming-tech .work-container a img {
-    width: 10px;
-    height: 10px;
+
+  h2.contact_facade-text {
+    line-height: 30px;
+    font-size: 160%;
+  }
+
+  img#contact_facade-img {
+    width: 35%;
+    right: 10%;
+  }
+
+  div.contact_concern {
+    gap: 20px;
+    padding: 0 30px;
+  }
+  div.contact_concern-text {
+    font-size: 120%;
   }
 }

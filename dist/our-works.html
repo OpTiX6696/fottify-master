@@ -4,17 +4,103 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
     <link rel="stylesheet" href="./css/our-works.css">
-    <script defer src="./our-works.js"></script>
+
+    <link rel="shortcut icon" href="./imgs/icon.ico" type="image/x-icon">
+    <script defer src="./js/our-works.js"></script>
+    <script defer src="./js/main.js"></script>
     <title> Fottify - Our Works </title>
 </head>
 <body>
+
+    <header class="main-header">
+        <div id="header__content">
+          <div id="main__logo">
+            <img src="imgs/fottify-logo.png" alt="Fottify Logo">
+            <div class="texts">
+              <h1>Fottify</h1>
+              <h5>Get Digital Get Fortified</h5>
+            </div>
+          </div>
+      
+          <div class="ham-menu">
+            <div class="dash"></div>
+            <div class="dash"></div>
+            <div class="dash"></div>
+          </div>
+          <nav id="nav">
+            <ul class="menu-nav">
+              <li class="menu-nav__item active">
+                <a href="index.html" class="menu-nav__link">Home</a>
+              </li>
+              <li class="menu-nav__item">
+                <a href="our-works.html" class="menu-nav__link">Our works</a>
+              </li>
+              <li class="menu-nav__item">
+                <a href="about.html" class="menu-nav__link">About us</a>
+              </li>
+              
+              <li class="menu-nav__item">
+                <a href="contact.html" class="menu-nav__link">Contact Us</a>
+              </li>
+              <li class="menu-nav__item">
+                <a href="index.html" class="menu-nav__link highlight">Hire Us</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        
+        <div id="header__services">
+          <div class="category">
+            <li class="category__item">Graphics & Design</li>
+            <div class="service_dropdown" id="g_and_a" >
+              <a>First Item</a>
+              <a>Second Item</a>
+              <a>Second Item</a>
+              <a>Second Item</a>
+              <a>Second Item</a>
+              <a>Second Item</a>
+            </div>
+          </div>
+          
+          <div class="category">
+            <li class="category__item">Video & Animation</li>
+            <div class="service_dropdown" id="vid_and_anim">
+              <a>First Item</a>
+              <a>Second Item</a>
+              <a>Second Item</a>
+              <a>Second Item</a>
+              <a>Second Item</a>
+              <a>Second Item</a>
+            </div>
+          </div>
+    
+          <div class="category">
+            <li class="category__item">Programming & Tech</li>
+            <div class="service_dropdown" id="prog_and_tech">
+              <a>First Item</a>
+              <a>Second Item</a>
+              <a>Second Item</a>
+              <a>Second Item</a>
+              <a>Second Item</a>
+              <a>Second Item</a>
+            </div>
+          </div>
+    
+        </div>
+        
+    </header>
+
+
+
     <div class="root">
         <div class="image-video-preview">
             <img src="" alt="">
             <iframe width="560" height="315" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <div class="close-image-preview"> &times; </div>
         </div>
+        
         <div class="our-works-content">
             <p class="intro-text">
                 At Fottify, we offer premium services in the creation of web services, print designs, visual designs e.t.c
@@ -301,5 +387,40 @@
             </section>
         </div>
     </div>
+
+    <footer>
+        <div id='footer'>
+          <!-- <div id="footer__nav">
+            <ul id="footer-nav">
+              <li><a href="#" class='footer__nav-item'>&gt; Home</a></li>
+              <li><a href="#" class='footer__nav-item'>&gt; Our Works</a></li>
+              <li><a href="#" class='footer__nav-item'>&gt; About Us </a></li>
+              <li><a href="#" class='footer__nav-item'>&gt; Contact Us</a></li>
+            </ul>
+          </div> -->
+      
+          <div id="newsletter">
+            <h3>
+              Subscribe to our Newsletter
+            </h3>
+            <form action="post">
+              <input type="email" name="subscriber" id="newsletter_sub" placeholder="Please, enter your email address">
+              <button type="submit">Subscribe</button>
+            </form>
+          </div>
+      
+          <div id="social__media">
+            <h3>Stay Connected With Us</h3>
+            <ul id="social__media__list">
+              <li class="social__media__item"><a href="" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook fa-2x"></i></a></li>
+              <li class="social__media__item"><a href="" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter fa-2x"></i></a></li>
+              <li class="social__media__item"><a href="" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin fa-2x"></i></a></li>
+              <li class="social__media__item"><a href="" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram fa-2x"></i></a></li>
+            </ul>
+          </div>
+        </div>
+    
+        <p>&copy; 2020 Fottify Company Limited</p>
+    </footer> 
 </body>
 </html>

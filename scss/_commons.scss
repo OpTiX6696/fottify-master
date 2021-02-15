@@ -74,7 +74,7 @@ a {
 //              HEADER
 // **************************************
 
-header {
+header.main-header {
     // border: 2px solid blue;
     position: fixed;
     left: 0;
@@ -161,7 +161,6 @@ nav#nav ul {
             background-color: $purple;
             border-radius: 50px;
         }
-
     }
 }
 
@@ -175,13 +174,19 @@ div#header__services {
     font-size: 16px;
     position: relative;
     padding: 0 10%;
-    // max-width: 1400px;
     margin: 0 auto;
 
     li {
         // border: 2px solid green;
         padding: 5px 0px;
         cursor: pointer;
+    }
+
+    div.category {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 }
 
@@ -190,9 +195,9 @@ div.service_dropdown {
     position: absolute;
     z-index: -1;
     top: 100%;
-    width: 20vw;
+    width: 30vw;
     min-width: 100px;
-    max-width: 200px;
+    max-width: 600px;
     background-color: lighten(#8b4d79d5, 50%);
     font-size: 16px;
     color: darken($purple, 30%);
@@ -200,10 +205,11 @@ div.service_dropdown {
     margin: 0 auto;
     height: 0;
     transition: all 0.5s ease-out;
+    line-height: 30px;
 
     &.show {
         transition: all 0.5s ease-out;
-        height: 198px;
+        height: 200px;
         // transition: all 0.75s ease-out;
 
     }
@@ -212,12 +218,13 @@ div.service_dropdown {
         // border: 2px solid red;
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
         width: 100%;
-        // line-height: 150%;
         font-size: 105%;
         padding: 5px 10px;
-        text-align: left;
-        border-bottom: 1px solid grey;
+        // text-align: left;
+        // border-bottom: 1px solid grey;
         cursor: pointer;
         &:hover {
             background-color: lighten($purple, 40%);
@@ -460,7 +467,7 @@ div#social__media {
 
 
 // *******************************************
-                // MOBILE VIEW (60px)
+                // MOBILE VIEW (600px)
 // *******************************************
 
 
