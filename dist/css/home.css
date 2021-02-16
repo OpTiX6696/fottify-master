@@ -510,7 +510,7 @@ div.feature__img.fourth {
 
 .tools {
   font-size: 20px;
-  background-image: url("../imgs/fottwhirl.svg");
+  background-image: url("../dist/imgs/fottwhirl.svg");
   background-repeat: no-repeat;
   background-size: contain;
   display: flex;
