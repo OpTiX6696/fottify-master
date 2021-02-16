@@ -201,7 +201,7 @@ div.feature {
 .tools {
     // border: 2px solid red;
     @include text-font;
-    background-image: url('../dist/imgs/fottwhirl.svg');
+    background-image: url('./imgs/fottwhirl.svg');
     background-repeat: no-repeat;
     background-size: contain;
     display: flex;
